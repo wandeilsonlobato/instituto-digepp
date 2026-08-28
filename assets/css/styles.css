@@ -290,6 +290,12 @@ ul { margin: 0; padding: 0; list-style: none; }
 .galeria-midia > video {
   width: 100%; height: 100%; object-fit: cover; display: block;
 }
+/* Em tela cheia, o vídeo deve aparecer inteiro (sem corte/zoom) — o cover
+   acima é só para o miniatura quadrada da Galeria. */
+.galeria-midia > video:fullscreen,
+.galeria-midia > video:-webkit-full-screen {
+  width: 100%; height: 100%; object-fit: contain; background: #000;
+}
 .galeria-carrossel {
   display: flex; width: 100%; height: 100%; overflow-x: auto;
   scroll-snap-type: x mandatory; scrollbar-width: none;

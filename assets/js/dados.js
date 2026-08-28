@@ -81,6 +81,7 @@ const PROJETOS = [
     eixo: 'Inclusão digital',
     status: 'Parceria ADRA',
     video: 'assets/videos/escolinha-solidaria-informatica.mp4',
+    videoCapa: 'assets/img/capas/escolinha-solidaria-informatica.jpg',
     resumo:
       'Escola gratuita de informática básica, inaugurada no Núcleo ADRA de Desenvolvimento em ' +
       'parceria com a coordenação da ADRA, levando letramento digital e preparação para o ' +
@@ -92,8 +93,8 @@ const PROJETOS = [
     eixo: 'Educação e cidadania',
     status: 'Em andamento',
     videos: [
-      { src: 'assets/videos/oficina-de-sons.mp4' },
-      { src: 'assets/videos/oficina-de-sons-creche-joao-e-maria.mp4', legenda: 'Creche Escola João e Maria' },
+      { src: 'assets/videos/oficina-de-sons.mp4', poster: 'assets/img/capas/oficina-de-sons.jpg' },
+      { src: 'assets/videos/oficina-de-sons-creche-joao-e-maria.mp4', legenda: 'Creche Escola João e Maria', poster: 'assets/img/capas/oficina-de-sons-creche-joao-e-maria.jpg' },
     ],
     resumo:
       'Projeto do Instituto, conduzido pelo colaborador Ricardo Passos, que transforma ' +
@@ -108,6 +109,7 @@ const PROJETOS = [
     eixo: 'Geração de renda',
     status: 'Em andamento',
     video: 'assets/videos/quilombolas-bequimao.mp4',
+    videoCapa: 'assets/img/capas/quilombolas-bequimao.jpg',
     resumo:
       'Primeira reunião entre o Instituto e as comunidades quilombolas Boa Vista e Iriritiua, ' +
       'no município de Bequimão, para apresentar o diagnóstico e a avaliação de necessidades ' +
@@ -119,6 +121,7 @@ const PROJETOS = [
     eixo: 'Geração de renda',
     status: 'Em andamento',
     video: 'assets/videos/quilombolas-peri-mirim.mp4',
+    videoCapa: 'assets/img/capas/quilombolas-peri-mirim.jpg',
     resumo:
       'Projetos desenvolvidos junto às comunidades quilombolas de Pericumã, em Peri Mirim, na ' +
       'Baixada Maranhense, com foco em empoderamento, desenvolvimento econômico e subsistência ' +
@@ -130,6 +133,7 @@ const PROJETOS = [
     eixo: 'Comunidade',
     status: 'Presença institucional',
     video: 'assets/videos/cidade-solidaria.mp4',
+    videoCapa: 'assets/img/capas/cidade-solidaria.jpg',
     resumo:
       'A convite da TV Cidade, o Instituto marca presença há três anos consecutivos no evento ' +
       'Cidade Solidária, levando cuidado, atenção e apoio às famílias da comunidade em um dia ' +
@@ -142,6 +146,7 @@ const PROJETOS = [
     status: 'Presença institucional',
     fotos: ['assets/img/projetos/cozinha-solidaria.jpg'],
     video: 'assets/videos/cozinha-solidaria.mp4',
+    videoCapa: 'assets/img/capas/cozinha-solidaria.jpg',
     resumo:
       'O Instituto participou da inauguração da Cozinha Solidária no Núcleo ADRA de ' +
       'Desenvolvimento, uma conquista para a comunidade construída em parceria constante com a ' +
@@ -163,6 +168,7 @@ const PROJETOS = [
     eixo: 'Comunidade',
     status: 'Presença institucional',
     video: 'assets/videos/pelo-cliente-hoje-pelo-futuro-todo-dia.mp4',
+    videoCapa: 'assets/img/capas/pelo-cliente-hoje-pelo-futuro-todo-dia.jpg',
     resumo:
       'Parceria na ação social promovida pela Equatorial e pela TV Cidade no Centro Educa Mais ' +
       'Dorilene Silva Castro, no Coroadinho. O Instituto disponibilizou seu departamento ' +
@@ -175,6 +181,7 @@ const PROJETOS = [
     eixo: 'Educação e cidadania',
     status: 'Presença institucional',
     video: 'assets/videos/ouvidoria-nos-bairros.mp4',
+    videoCapa: 'assets/img/capas/ouvidoria-nos-bairros.jpg',
     resumo:
       'Presença na ação "Ouvidoria nos Bairros", promovida pelo Ministério Público do Maranhão, ' +
       'na Associação Carente São Benedito do Bairro de Fátima — aproximando os canais da ' +
@@ -188,6 +195,7 @@ const PROJETOS = [
     status: 'Campanha anual',
     fotos: ['assets/img/projetos/dia-das-criancas.jpg'],
     video: 'assets/videos/dia-das-criancas.mp4',
+    videoCapa: 'assets/img/capas/dia-das-criancas.jpg',
     resumo:
       'Celebração do Dia das Crianças na Vila Embratel, com brincadeiras, sorrisos e doação de ' +
       'brinquedos — um gesto de cuidado e solidariedade que transforma o presente e o futuro ' +
@@ -285,5 +293,5 @@ const CONTATO = {
   telefone: '+55 98 3237-0870',
   whatsapp: '559832370870', // somente números, com código do país
   instagram: 'institutodigepp',
-  endereco: 'São Luís — Maranhão',
+  endereco: 'Rua Paraná, nº 6, Bairro de Fátima, São Luís - MA, CEP 65031-295',
 };

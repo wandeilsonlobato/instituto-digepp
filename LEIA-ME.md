@@ -30,15 +30,16 @@ As legendas dos posts do Instagram não são acessíveis automaticamente, então
 os itens abaixo ficaram como rascunho — eles aparecem no site com borda
 tracejada e a etiqueta **"A preencher"**.
 
-Abra `assets/js/dados.js` e complete:
+Abra `assets/js/dados.js` e complete o que ainda falta:
 
-1. **Projetos** — o único confirmado é o **Conecta Idoso**. Adicione os demais
-   projetos que aparecem nos destaques do Instagram.
-2. **Workshops** — confirme os temas realmente oferecidos.
-3. **Depoimentos** — coloque falas reais de participantes, voluntários e parceiros.
-4. **Endereço** — troque `'São Luís — Maranhão'` pelo endereço completo da sede.
+1. **Depoimentos** — os 3 ainda são texto de exemplo. Troque pelas falas reais
+   de participantes, voluntários e parceiros.
+2. **Workshops** — só tem 1 cadastrado ("Segurança digital para a terceira
+   idade"). Adicione outros que o Instituto realmente ofereça.
 
-Para cada bloco: escreva os textos e **apague a linha `rascunho: true`**.
+Projetos, parceiros e endereço já estão preenchidos com informações reais.
+
+Para cada bloco em rascunho: escreva os textos e **apague a linha `rascunho: true`**.
 O card deixa de ser tracejado e passa a aparecer como conteúdo publicado.
 
 ### Adicionar a logo de um parceiro (ex: ADRA)
