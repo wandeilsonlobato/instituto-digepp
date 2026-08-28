@@ -1,0 +1,10 @@
+# Pastas de rascunho com os arquivos originais (fotos/vídeos/logos crus,
+# antes de processados). O site usa apenas as cópias já prontas dentro de
+# assets/ — estas pastas só existem para referência e duplicam o conteúdo.
+/fotos/
+/videos/
+/logo/
+
+# Sistema
+.DS_Store
+Thumbs.db
