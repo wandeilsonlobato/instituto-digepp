@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="auto">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,14 +7,49 @@
   <meta name="description" content="O Instituto Digepp fortalece comunidades por meio de educação, cidadania e inclusão. Transformando vidas em São Luís, Maranhão." />
   <meta name="theme-color" content="#C11F2A" />
   <link rel="icon" href="assets/img/logo-simbolo.png" type="image/png" />
+  <link rel="canonical" href="https://institutodigepp.org.br/" />
 
   <!-- Open Graph / redes sociais -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Instituto Digepp" />
+  <meta property="og:url" content="https://institutodigepp.org.br/" />
   <meta property="og:title" content="Instituto Digepp — Transformando vidas" />
   <meta property="og:description" content="Fortalecendo comunidades, criamos um futuro mais justo e igualitário. Apoie nosso Instituto!" />
   <meta property="og:image" content="assets/img/logo-completo.png" />
   <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Instituto Digepp — Transformando vidas" />
+  <meta name="twitter:description" content="Fortalecendo comunidades por meio de educação, cidadania e inclusão em São Luís, Maranhão." />
+  <meta name="twitter:image" content="assets/img/logo-completo.png" />
+
+  <!-- Schema.org JSON-LD (Organização / ONG) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Instituto Digepp",
+    "alternateName": "Instituto de Desenvolvimento e Inovação em Gestão, Educação e Políticas Públicas",
+    "url": "https://institutodigepp.org.br/",
+    "logo": "https://institutodigepp.org.br/assets/img/logo-completo.png",
+    "image": "https://institutodigepp.org.br/assets/img/logo-completo.png",
+    "description": "Organização da sociedade civil sem fins lucrativos que fortalece comunidades por meio de educação, cidadania, inclusão digital e geração de renda em São Luís, Maranhão.",
+    "foundingDate": "2016",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Paraná, nº 6",
+      "addressLocality": "São Luís",
+      "addressRegion": "MA",
+      "postalCode": "65031-295",
+      "addressCountry": "BR"
+    },
+    "telephone": "+5598989168073",
+    "sameAs": [
+      "https://instagram.com/institutodigepp"
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,14 +70,34 @@
         </span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-        <span class="nav-toggle-bars" aria-hidden="true"></span>
-        <span class="sr-only">Abrir menu de navegação</span>
-      </button>
+      <div class="header-actions-mobile">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Alternar modo de cor" title="Alternar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+          <span class="sr-only">Abrir menu de navegação</span>
+        </button>
+      </div>
 
       <nav class="nav" id="navMenu" aria-label="Navegação principal">
         <ul>
           <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#impacto">Impacto</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#parceiros">Parceiros</a></li>
@@ -50,6 +105,24 @@
           <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#participe">Participe</a></li>
           <li><a href="#contato">Contato</a></li>
+          <li class="nav-theme">
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo de cor" title="Alternar tema">
+              <svg class="icon-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+          </li>
           <li class="nav-cta"><a class="btn btn-primary btn-sm" href="#participe">Seja voluntário</a></li>
         </ul>
       </nav>
@@ -80,6 +153,35 @@
           <li>Inclusão digital</li>
           <li>Rede de voluntariado</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- ============ IMPACTO SOCIAL (MÉTRICAS) ============ -->
+    <section id="impacto" class="section-impacto" aria-labelledby="impacto-titulo">
+      <div class="wrap">
+        <h2 id="impacto-titulo" class="sr-only">Nosso Impacto em Números</h2>
+        <div class="grid-impacto">
+          <div class="card-impacto reveal">
+            <span class="impacto-numero" data-contador="8" data-prefixo="+">0</span>
+            <strong class="impacto-rotulo">Anos de Atuação</strong>
+            <p class="impacto-desc">Transformando realidades em São Luís e municípios maranhenses desde 2016.</p>
+          </div>
+          <div class="card-impacto reveal">
+            <span class="impacto-numero" data-contador="15" data-prefixo="+">0</span>
+            <strong class="impacto-rotulo">Ações e Projetos</strong>
+            <p class="impacto-desc">Iniciativas em inclusão digital, cidadania, cultura, sustentabilidade e apoio comunitário.</p>
+          </div>
+          <div class="card-impacto reveal">
+            <span class="impacto-numero" data-contador="10" data-prefixo="+">0</span>
+            <strong class="impacto-rotulo">Grandes Parcerias</strong>
+            <p class="impacto-desc">Alianças institucionais com o poder público estadual/municipal, empresas e terceiro setor.</p>
+          </div>
+          <div class="card-impacto reveal">
+            <span class="impacto-numero" data-contador="100" data-sufixo="%">0</span>
+            <strong class="impacto-rotulo">Foco Comunitário</strong>
+            <p class="impacto-desc">Dedicação total ao protagonismo, dignidade e desenvolvimento das pessoas.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -157,11 +259,15 @@
           <p class="eyebrow">Veja de perto</p>
           <h2 id="galeria-titulo">Galeria</h2>
           <p class="lead">
-            Vídeos dos nossos projetos e presenças em ação, direto do dia a dia do Instituto.
+            Vídeos e fotos dos nossos projetos e presenças em ação, direto do dia a dia do Instituto. Clique para assistir ou ampliar.
           </p>
         </header>
 
-        <div class="grid-cards" id="listaGaleria">
+        <div class="filtros-galeria reveal" role="group" aria-label="Filtrar galeria por eixo">
+          <!-- preenchido por main.js -->
+        </div>
+
+        <div class="grid-cards grid-galeria" id="listaGaleria">
           <!-- preenchido por main.js a partir de assets/js/dados.js -->
         </div>
       </div>
@@ -218,9 +324,21 @@
           <p class="lead">Quem vive a transformação conta melhor do que qualquer relatório.</p>
         </header>
 
-        <div class="grid-cards depoimentos" id="listaDepoimentos">
-          <!-- preenchido por main.js -->
+        <div class="carrossel-depoimentos-wrap reveal">
+          <button class="depoimento-nav prev" id="depoimentoPrev" aria-label="Depoimento anterior">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          
+          <div class="grid-cards depoimentos carrossel-depoimentos" id="listaDepoimentos">
+            <!-- preenchido por main.js -->
+          </div>
+
+          <button class="depoimento-nav next" id="depoimentoNext" aria-label="Próximo depoimento">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
         </div>
+
+        <div class="carrossel-dots-depoimentos" id="depoimentosDots" aria-hidden="true"></div>
       </div>
     </section>
 
@@ -278,7 +396,7 @@
               </span>
               <div>
                 <strong>WhatsApp</strong>
-                <a href="https://api.whatsapp.com/send?phone=559832370870" target="_blank" rel="noopener">(98) 3237-0870</a>
+                <a href="https://api.whatsapp.com/send?phone=5598989168073" target="_blank" rel="noopener">(98) 98916-8073</a>
               </div>
             </li>
             <li>
@@ -287,7 +405,7 @@
               </span>
               <div>
                 <strong>Telefone</strong>
-                <a href="tel:+559832370870">+55 98 3237-0870</a>
+                <a href="tel:+5598989168073">+55 98 98916-8073</a>
               </div>
             </li>
             <li>
@@ -361,6 +479,7 @@
         <h3>Navegue</h3>
         <ul>
           <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#impacto">Impacto</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#parceiros">Parceiros</a></li>
@@ -373,8 +492,8 @@
       <div>
         <h3>Fale conosco</h3>
         <ul>
-          <li><a href="tel:+559832370870">+55 98 3237-0870</a></li>
-          <li><a href="https://api.whatsapp.com/send?phone=559832370870" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="tel:+5598989168073">+55 98 98916-8073</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=5598989168073" target="_blank" rel="noopener">WhatsApp</a></li>
           <li><a href="https://instagram.com/institutodigepp" target="_blank" rel="noopener">@institutodigepp</a></li>
         </ul>
       </div>
@@ -386,11 +505,33 @@
     </div>
   </footer>
 
-  <a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=559832370870" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="currentColor">
-      <path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.46s1.07 2.86 1.22 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.87 9.87 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.05-.2-.31a8.19 8.19 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.22-8.24 8.22z"/>
-    </svg>
-  </a>
+  <!-- ============ LIGHTBOX MODAL (GALERIA) ============ -->
+  <div class="lightbox-overlay" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visualizador de mídia da Galeria">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Fechar visualizador">✕</button>
+      <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Mídia anterior">‹</button>
+      <button class="lightbox-nav next" id="lightboxNext" aria-label="Próxima mídia">›</button>
+      
+      <div class="lightbox-body" id="lightboxBody">
+        <!-- preenchido dinamicamente por main.js -->
+      </div>
+      
+      <div class="lightbox-footer" id="lightboxFooter">
+        <!-- título, eixo e legenda -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BOTÃO WHATSAPP FLUTUANTE ============ -->
+  <div class="whatsapp-float-container">
+    <span class="whatsapp-tooltip">Fale com nossa equipe</span>
+    <a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=5598989168073" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="currentColor">
+        <path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.46s1.07 2.86 1.22 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.87 9.87 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.05-.2-.31a8.19 8.19 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.22-8.24 8.22z"/>
+      </svg>
+    </a>
+  </div>
 
   <script src="assets/js/dados.js"></script>
   <script src="assets/js/main.js"></script>

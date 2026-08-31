@@ -21,6 +21,7 @@ const EIXOS = [
   'Geração de renda',
   'Saúde e bem-estar',
   'Comunidade',
+  'Cultura e Tradição',
 ];
 
 const EIXO_COR = {
@@ -29,6 +30,7 @@ const EIXO_COR = {
   'Geração de renda':      'orange',
   'Saúde e bem-estar':     'crimson',
   'Comunidade':            'maroon',
+  'Cultura e Tradição':    'peach',
 };
 
 /* ---------- PROJETOS ----------
@@ -211,6 +213,45 @@ const PROJETOS = [
       'por meio do programa Adote um Idoso a pessoas idosas atendidas pelo Instituto.',
     publico: 'Pessoas idosas atendidas pelo programa Adote um Idoso',
   },
+  {
+    titulo: 'Oficina de Sonhos',
+    eixo: 'Educação e cidadania',
+    status: 'Fomento 343/2024',
+    resumo:
+      'Iniciativa realizada através de termo de fomento com o Governo do Estado do Maranhão ' +
+      '(Fomento 343/2024), proporcionando oficinas formativas, desenvolvimento de habilidades ' +
+      'e cidadania para crianças e jovens da comunidade.',
+    publico: 'Crianças, jovens e famílias atendidas',
+  },
+  {
+    titulo: 'Feira Cultural do Anil',
+    eixo: 'Cultura e Tradição',
+    status: 'Fomento 366/2024',
+    resumo:
+      'Projeto fomentado pelo Governo do Estado do Maranhão (Fomento 366/2024), valorizando ' +
+      'a identidade comunitária, a economia criativa, o artesanato, a gastronomia e as manifestações ' +
+      'culturais no bairro do Anil e região.',
+    publico: 'Empreendedores locais, artistas e moradores do Anil e adjacências',
+  },
+  {
+    titulo: 'São João Vai Brasil',
+    eixo: 'Cultura e Tradição',
+    status: 'Fomento 746/2026',
+    resumo:
+      'Celebração e valorização dos tradicionais festejos juninos maranhenses com fomento ' +
+      'do Governo do Estado do Maranhão e SECMA (Fomento 746/2026), fortalecendo as raízes populares, ' +
+      'o turismo cultural e a integração comunitária.',
+    publico: 'Comunidade em geral, artistas, brincantes e visitantes',
+  },
+  {
+    titulo: 'Projeto Mãos Solidárias (6ª Edição)',
+    eixo: 'Comunidade',
+    status: 'Parceria SEMSA',
+    resumo:
+      'Ação contínua executada em parceria com a Secretaria Municipal de Segurança Alimentar (SEMSA), ' +
+      'promovendo assistência nutricional, cidadania e apoio alimentar direto a famílias em vulnerabilidade social.',
+    publico: 'Famílias em situação de vulnerabilidade e insegurança alimentar',
+  },
 ];
 
 /* ---------- PARCEIROS ----------
@@ -224,14 +265,24 @@ const PROJETOS = [
    ---------------------------------------------------------------------- */
 const PARCEIROS = [
   {
-    nome: 'ADRA',
-    logo: 'assets/img/parceiros/adra.png',
-    descricao: 'Parceria no Núcleo de Desenvolvimento: Escolinha Solidária de Informática e Cozinha Solidária.',
+    nome: 'Governo do Estado do Maranhão',
+    logoPendente: true,
+    descricao: 'Apoio e fomento a projetos sociais, culturais e formativos em benefício da população maranhense.',
+  },
+  {
+    nome: 'SECMA',
+    logoPendente: true,
+    descricao: 'Secretaria de Estado da Cultura do Maranhão: fomento aos projetos culturais, tradicionais e comunitários.',
   },
   {
     nome: 'Prefeitura de São Luís',
     logo: 'assets/img/parceiros/prefeitura-sao-luis.png',
     descricao: 'Promotora do Festival do Estudante e de ações com os agentes da limpeza da SEMOSP.',
+  },
+  {
+    nome: 'ADRA',
+    logo: 'assets/img/parceiros/adra.png',
+    descricao: 'Parceria no Núcleo de Desenvolvimento: Escolinha Solidária de Informática e Cozinha Solidária.',
   },
   {
     nome: 'TV Cidade',
@@ -253,6 +304,16 @@ const PARCEIROS = [
     logo: 'assets/img/parceiros/mpma.png',
     descricao: 'Parceria na ação Ouvidoria nos Bairros, no Bairro de Fátima.',
   },
+  {
+    nome: 'Instituto João e Maria',
+    logoPendente: true,
+    descricao: 'Parceria no projeto de desenvolvimento e musicalização junto à União Beneficente dos Moradores do João Paulo.',
+  },
+  {
+    nome: 'Associação Comunitária do Bairro de Fátima',
+    logoPendente: true,
+    descricao: 'Parceria em ações sociais, cidadania, saúde e atendimento direto aos moradores do Bairro de Fátima.',
+  },
 ];
 
 /* ---------- WORKSHOPS / CAPACITAÇÕES ---------- */
@@ -262,36 +323,33 @@ const WORKSHOPS = [
     resumo:
       'Como reconhecer golpes por WhatsApp, links falsos e ligações fraudulentas — com ' +
       'prática guiada no próprio celular do participante.',
-    formato: 'Presencial · 2h',
+    formato: 'Presencial · 10h',
   },
 ];
 
 /* ---------- DEPOIMENTOS ---------- */
 const DEPOIMENTOS = [
   {
-    texto: 'Escreva aqui o depoimento, com as palavras da própria pessoa.',
-    autor: 'Nome da pessoa',
-    papel: 'Participante do projeto',
-    rascunho: true,
+    texto: 'Esse projeto me deu mais segurança para usar o celular.',
+    autor: 'Participante do Conecta Idoso',
+    papel: 'Inclusão Digital da Pessoa Idosa',
   },
   {
-    texto: 'Escreva aqui o depoimento, com as palavras da própria pessoa.',
-    autor: 'Nome da pessoa',
-    papel: 'Voluntário(a)',
-    rascunho: true,
+    texto: 'Deixei de depender de parentes para certos serviços por conta do projeto CONECTA IDOSO.',
+    autor: 'Participante do Conecta Idoso',
+    papel: 'Inclusão Digital da Pessoa Idosa',
   },
   {
-    texto: 'Escreva aqui o depoimento, com as palavras da própria pessoa.',
-    autor: 'Nome da pessoa',
-    papel: 'Parceiro institucional',
-    rascunho: true,
+    texto: 'Aprendi muito sobre a prevenção de golpes no projeto conecta idoso.',
+    autor: 'Participante do Conecta Idoso',
+    papel: 'Inclusão Digital da Pessoa Idosa',
   },
 ];
 
 /* ---------- CONTATO ---------- */
 const CONTATO = {
-  telefone: '+55 98 3237-0870',
-  whatsapp: '559832370870', // somente números, com código do país
+  telefone: '+55 98 98916-8073',
+  whatsapp: '5598989168073', // somente números, com código do país
   instagram: 'institutodigepp',
   endereco: 'Rua Paraná, nº 6, Bairro de Fátima, São Luís - MA, CEP 65031-295',
 };

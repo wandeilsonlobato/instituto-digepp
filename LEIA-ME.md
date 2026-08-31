@@ -30,17 +30,7 @@ As legendas dos posts do Instagram não são acessíveis automaticamente, então
 os itens abaixo ficaram como rascunho — eles aparecem no site com borda
 tracejada e a etiqueta **"A preencher"**.
 
-Abra `assets/js/dados.js` e complete o que ainda falta:
-
-1. **Depoimentos** — os 3 ainda são texto de exemplo. Troque pelas falas reais
-   de participantes, voluntários e parceiros.
-2. **Workshops** — só tem 1 cadastrado ("Segurança digital para a terceira
-   idade"). Adicione outros que o Instituto realmente ofereça.
-
-Projetos, parceiros e endereço já estão preenchidos com informações reais.
-
-Para cada bloco em rascunho: escreva os textos e **apague a linha `rascunho: true`**.
-O card deixa de ser tracejado e passa a aparecer como conteúdo publicado.
+Depoimentos, projetos, parceiros e endereço já estão preenchidos com informações reais. Se desejar adicionar novos depoimentos ou workshops, basta abrir `assets/js/dados.js` e incluir novos blocos.
 
 ### Adicionar a logo de um parceiro (ex: ADRA)
 
@@ -74,7 +64,7 @@ abaixo da lista `EIXOS` em `dados.js`) — não é preciso escolher ícone nem c
 
 | Item | Valor |
 |---|---|
-| Telefone / WhatsApp | +55 98 3237-0870 |
+| Telefone / WhatsApp | +55 98 98916-8073 |
 | Instagram | @institutodigepp |
 | Fundação | 2016 |
 | Lema | "Transformando vidas" |
@@ -118,10 +108,13 @@ site precisa mudar.
 
 ## Recursos incluídos
 
-- Responsivo (celular, tablet e desktop) com menu hambúrguer
-- Modo escuro automático conforme a preferência do sistema
-- Acessibilidade: link "pular para o conteúdo", foco visível, rótulos ARIA,
-  respeito a `prefers-reduced-motion`
-- Filtro de projetos por eixo de atuação
-- Botão flutuante de WhatsApp
-- Metatags de SEO e Open Graph para compartilhamento em redes sociais
+- Responsivo (celular, tablet e desktop) com menu hambúrguer e ScrollSpy ativo
+- Seletor de modo escuro / claro manual com botão no cabeçalho e salvamento no navegador
+- Faixa de métricas e impacto social com contadores animados
+- Filtros por eixo tanto nos Projetos quanto na Galeria
+- Visualizador Lightbox/Modal em tela cheia para vídeos e fotos da galeria com atalhos de teclado (Esc, setas)
+- Carrossel interativo para depoimentos com navegação e suporte a toque/swipe
+- Otimização no carregamento de vídeos (`preload="none"` com miniaturas)
+- Acessibilidade: link "pular para o conteúdo", foco visível, rótulos ARIA, respeito a `prefers-reduced-motion`
+- Botão flutuante de WhatsApp com balão animado de chamada
+- Metatags completas de SEO, Open Graph, Twitter Cards e Schema.org JSON-LD (ONG/Organização)
