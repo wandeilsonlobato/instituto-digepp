@@ -743,6 +743,12 @@ ul { margin: 0; padding: 0; list-style: none; }
 .lightbox-body video {
   max-width: 100%; max-height: 68vh; object-fit: contain; display: block;
 }
+/* Em tela cheia nativa (botão do player), o vídeo deve ocupar a tela toda,
+   sem ficar preso ao limite de 68vh do modal. */
+.lightbox-body video:fullscreen,
+.lightbox-body video:-webkit-full-screen {
+  width: 100%; height: 100%; max-width: none; max-height: none; object-fit: contain;
+}
 
 .lightbox-footer {
   padding: 1.25rem 1.6rem; background: #1C120F;
