@@ -266,12 +266,12 @@ const PROJETOS = [
 const PARCEIROS = [
   {
     nome: 'Governo do Estado do Maranhão',
-    logoPendente: true,
+    logo: 'assets/img/parceiros/governo-ma.png',
     descricao: 'Apoio e fomento a projetos sociais, culturais e formativos em benefício da população maranhense.',
   },
   {
     nome: 'SECMA',
-    logoPendente: true,
+    logo: 'assets/img/parceiros/secma.jpg',
     descricao: 'Secretaria de Estado da Cultura do Maranhão: fomento aos projetos culturais, tradicionais e comunitários.',
   },
   {
@@ -305,13 +305,13 @@ const PARCEIROS = [
     descricao: 'Parceria na ação Ouvidoria nos Bairros, no Bairro de Fátima.',
   },
   {
-    nome: 'Instituto João e Maria',
-    logoPendente: true,
+    nome: 'Creche Escola João e Maria',
+    logo: 'assets/img/parceiros/joao-e-maria.png',
     descricao: 'Parceria no projeto de desenvolvimento e musicalização junto à União Beneficente dos Moradores do João Paulo.',
   },
   {
-    nome: 'Associação Comunitária do Bairro de Fátima',
-    logoPendente: true,
+    nome: 'Associação Carente São Benedito do Bairro de Fátima',
+    logo: 'assets/img/parceiros/acsbbf.jpg',
     descricao: 'Parceria em ações sociais, cidadania, saúde e atendimento direto aos moradores do Bairro de Fátima.',
   },
 ];
